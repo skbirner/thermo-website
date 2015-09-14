@@ -1,0 +1,107 @@
+body {
+    /* font-family: Arial, Helvetica, sans-serif; */
+/*font-family: Tahoma, Geneva, sans-serif;*/
+}
+
+h1 {
+    text-align: center;
+}
+
+h2 {
+    text-align: center;
+    margin-top: 80px;
+    margin-bottom: 0px;
+}
+
+p {
+    text-align: left;
+    margin-right: auto;
+    margin-left: auto;
+    width: 800px;
+    font-size: 18px;
+}
+
+svg {
+    cursor: crosshair;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+
+#chaser {
+    fill: hsl(220, 85%, 40%);
+}
+
+.handle {
+    fill: black;
+    fill-opacity: 0;
+    stroke: black;
+    stroke-width: 2px;
+}
+
+.handle:hover {
+    fill: black;
+    fill-opacity: 0;
+    stroke: black;
+    stroke-width: 3px;
+}
+
+.sliderRail {
+    stroke: hsl(0, 0%, 67%);
+    stroke-width: 10;
+    stroke-linecap: butt;
+}
+
+.sliderRail:hover {
+    stroke: hsl(0, 0%, 69%);
+    stroke-width: 10;
+    stroke-linecap: butt;
+}
+
+.curve {
+    stroke: blue;
+    stroke-width: 3;
+    fill: none;
+}
+
+.curve2 {
+    stroke: black;
+    stroke-width: 3;
+    fill: none;
+}
+
+.curve3 {
+    stroke: blue;
+    stroke-width: 3;
+    stroke-dasharray: 10,10;
+    fill: none;
+}
+
+.domain {
+    fill: none;
+    stroke: black;
+    stroke-width;
+    1;
+}
+
+.axisLabel {
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.sliderLabel {
+    font-size: 16px;
+    font-weight: 600;
+}
+
+pre.src {
+    border-top: none;
+    border-bottom: none;
+    border-left: 1em solid #eee;
+    resize: none;
+}
+
+script + .org-src-container pre {
+    margin-top: 0;
+    padding-top: 0.5em;
+}

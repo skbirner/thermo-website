@@ -1,0 +1,90 @@
+
+#Column1 {
+    /*background-repeat: no-repeat;*/
+    width: calc(65% - 450px - 30px);
+    height: auto;
+    float: left;
+    margin-left: 30px;
+    margin-top: -20px;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    /*text-align: right;*/
+    /*margin-right: 50%;*/
+    /*text-align: right;*/
+}
+#Column2 {
+    /*background-repeat: no-repeat;*/
+    position:absolute;
+    left:70%;
+    width: 600px;
+    float: left;
+    margin-left:-450px;
+    /*align-content: center;*/
+}
+
+p {
+    text-align: left;
+    margin-right: auto;
+    margin-left: auto;
+    font-size: 18px;
+}
+
+
+
+/* THIS IS A HACK:
+DIRECT COPY FROM TOP LEVEL STYLE FILE */
+.header {
+    text-align: center;
+    color: #000000;
+}
+.header ul {
+    text-align: center;
+    padding: 0;
+    list-style-type: none;
+}
+.header ul li {
+    display: inline;
+    margin: 0.2em;
+}
+.header ul li a {
+    text-decoration: none;
+    padding: .2em 0.8em;
+    color: #B5B4DC;
+    background-color: #2114D4;
+    border-radius: 0.3em;
+    font-weight: bold;
+    font-size: 1.2em;
+}
+.header ul li a:hover {
+    color: #2114D4;
+    background-color: #B5B4DC;
+    text-decoration: underline;
+    border-radius: 0.3em;
+}
+
+path {
+    stroke: black;
+    stroke-width: 3;
+    fill: none;
+}
+
+.axis {
+    shape-rendering: crispEdges;
+}
+
+.x.axis line {
+    stroke: lightgrey;
+}
+
+.x.axis .minor {
+    stroke-opacity: .5;
+}
+
+.x.axis path {
+    display: none;
+}
+
+.y.axis line, .y.axis path {
+    fill: none;
+    stroke: #000;
+}
