@@ -29,10 +29,6 @@ p {
     font-size: 18px;
 }
 
-
-
-/* THIS IS A HACK:
-DIRECT COPY FROM TOP LEVEL STYLE FILE */
 .header {
     text-align: center;
     color: #000000;
