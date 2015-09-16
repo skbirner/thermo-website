@@ -217,3 +217,20 @@ d3.timer(function(t) {
     stepResponse.redraw();
     GT_response.redraw();
 });
+
+sliderDamp.onRedraw = function() {
+
+    setAll("xValue", sliderDamp.getValue());
+    setAll("y0Value", 8.3145*273*Math.log(1-sliderDamp.getValue()));
+    setAll("y1Value", 8.3145*273*Math.log(sliderDamp.getValue()));
+    setAll("GValue", gibbs_of_mixing(sliderDamp.getValue()));
+
+};
+
+function setAll(classname, value) {
+    var elements = document.getElementsByClassName(classname)
+    for (var i in elements) {
+        elements[i].innerHTML = value.toFixed(2);
+    }
+
+}
