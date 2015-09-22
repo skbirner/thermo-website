@@ -51,7 +51,6 @@ function Gibbs_phase2(T){    // this is the function you want plotted
     return Gibbs_phase(T, 25)
 }
 
-
 var x1 = d3.scale.linear().domain([0, sample]).range([Tmin, Tmax]);
 var data = d3.range(sample).map(function(d){ return {
     x: x1(d),
@@ -73,8 +72,6 @@ var height3 = 120;
 
 var Tmin2 = 0; // defining the x-axis: function undefined at 0
 var Tmax2 = 10;
-
-
 
 var x1 = d3.scale.linear().domain([0, sample]).range([Tmin2, Tmax2]);
 var data = d3.range(sample).map(function(d){ return {

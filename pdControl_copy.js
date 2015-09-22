@@ -13,7 +13,7 @@ function bound(value, min, max) {
 var panelPtMass = {
     width: parseInt(document.getElementById("panelPtMass").style.width),
     height: parseInt(document.getElementById("panelPtMass").style.height),
-    svg: d3.select("#panelPtMass"),
+    svg: d3.select("#panelPtMass")
 };
 
 var formatLabelString = d3.format(".2f");
@@ -142,7 +142,6 @@ var GT_response = {
     tLow: 0.4,
     tUpp: 1,
     data: new Array(100),
-    data2: new Array(100),
 
     R: 8.3145,
     T: 273,
@@ -166,8 +165,6 @@ var GT_response = {
         return this.yScale(x);
     },
 
-    //X_Intercept: this.myDataCurve(0.6),
-
 
     buildData: function() {
         var nData = this.data.length;
@@ -176,7 +173,6 @@ var GT_response = {
         for (var i = 0; i < nData; i++) {
             var t = shift + i * slope;
             this.data[i] = [this.xScale(t), this.myDataCurve(t)];
-         //   this.data2[i] = [0.6, this.yScale(t)];
         }
     },
 
@@ -204,7 +200,6 @@ d3.select("#panelPtMass").append("path")
     .attr("class", "curve");
 
 GT_response.buildData();
-
 
 //ANIMATION LOOP:
 var tLast = 0,
